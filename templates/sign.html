@@ -1,0 +1,51 @@
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/sign.css">
+  </head>
+  <body>
+    <div class= 'outer-box'>
+        <div class='welcome'>
+              <img src="static/welcome.jpg">
+              <div class="image-overlay">
+              <h2>HELLO,</h2>
+               <p>ASTRA.AI WELCOMES YOU</p>
+              </div>
+          </div>
+      
+        <div class="card">
+              <div id="signin-container">
+              <h1>Sign-in</h1>
+               <form method="POST" id="sign-in" action='/authenticate'>
+              <input type="text" id="username" name ="username" placeholder="Username" required>
+              <input type="password" id="password"  name ="password" placeholder="Password" required>
+              </form>
+              <button id="sign_in-submit" onclick="submitForm1()">Sign In</button>
+              <p id="signup-link">New user? <button  id="show_sign-up"onclick="showSignUp()">Sign   
+              Up</button></p>
+                 <p
+          style="color:rgb(255, 20, 20);margin-bottom:4px">
+            {{s}}
+      </p>
+               </div>
+
+              <div id="signup-container">
+              <h1>Sign-up</h1>
+              <form method="POST" id="sign-up" action='/signup'>
+              <input type="email"  name ="email" id="email" placeholder="email" required>
+              <input type="text" id="new-username" name="username"placeholder="New Username" required>
+              <input type="password" id="new-password"  name="password" placeholder="New Password" required>
+             </form>
+                <button  id="sign_up-submit"onclick="submitForm2()">Sign Up</button>
+                </div>
+        </div>
+        
+      </div>
+      <script src="static/sign.js"></script>
+    
+  </body>
+  
+</html>

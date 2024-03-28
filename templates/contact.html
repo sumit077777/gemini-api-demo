@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel ="stylesheet" href="static/css/contact.css">
+    
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  </head>
+   <body>
+     <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  
+  <div class="navbar">
+    <div class="logo">
+    <img src='static/logo.png'>
+    </div>
+     <a href="{{url_for('home_page')}}">Home</a>
+    <a href="{{ url_for('services_page') }}">Services</a>
+    <a href="{{ url_for('faq_page') }}">FAQ</a>
+    <a href="{{ url_for('contact_page') }}">Contact</a>
+    <a href="{{ url_for('about_page') }}">About us</a>
+    <a href="{{ url_for('login_page') }}" class="sign">Sign in</a>
+  </div>
+     
+    <h2>Fill this Form</h2>
+  <div class="message-box">
+            <form action="/contact/submissions" method="POST" class="form">
+                <label for=""> First Name</label>
+                <label for="" style="margin-left: 200px;"> Last Name</label>
+                <br>
+                <input type="text" name="first_name" required>
+                <input type="text" name="last_name" required>
+                <br>
+                <label for="" style> Email</label>
+                <br>
+                <input type="email" name="email" style="height: 30px; width:360px">
+                <br>
+                <label>Name of organization</label>
+                <br>
+                <input type="text" name="organization_name"style="height: 30px; width:360px;"required>
+                <br>
+                <br>
+                <label class="detail">Additional Detail</label>
+                <br>
+                <textarea  id="add" name="additional_info" rows="4" cols="50"></textarea>
+                <br>
+                <br>
+                <button>Submit</button>
+            
+            </form>
+      </div>
+ 
+  </body>
+</html>

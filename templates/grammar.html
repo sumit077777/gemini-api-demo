@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="path/to/overlayscrollbars.css" rel="stylesheet"/>
+<script type="text/javascript" src="path/to/overlayscrollbars.browser.es.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/grammar.css">
+  <title>Grammar-GPT</title>
+ 
+  
+  
+</head>
+<body>
+   
+  <div class="navbar">
+    <div class="logo">
+    <img src='static/logo.png'>
+    </div>
+     <a href="{{url_for('home_page')}}">Home</a>
+    <a href="{{ url_for('services_page') }}">Services</a>
+    <a href="{{ url_for('faq_page') }}">FAQ</a>
+    <a href="{{ url_for('contact_page') }}">Contact</a>
+    <a href="{{ url_for('about_page') }}">About us</a>
+    <a href="{{ url_for('login_page') }}" class="sign">Sign in</a>
+  </div>
+ 
+  <h1>Grammar-GPT</h1>
+  <div id="chat-container">
+    <div id="chat-output"></div>
+    <div id="chat-input">
+    <button id="start-btn">start</button>
+      <input type="text" id="user-input" placeholder="Type your message" />
+      <button id="submit-btn"><img id="send" src="static/send.png"></button>
+      <button id="voice-btn" onclick="startSpeechRecognition()"><img src="static/voice.png" id="voice"></button>
+    </div>
+  </div>
+<a href="">
+  <script src="static/grammar.js "></script>
+</body>
+</html>

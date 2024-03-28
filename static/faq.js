@@ -1,0 +1,1 @@
+const q=document.getElementById('answers')

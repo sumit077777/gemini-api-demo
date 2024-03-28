@@ -1,0 +1,51 @@
+<html>
+  <head>
+     <title>Program Explanation</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  <link rel ="stylesheet" href="static/css/services.css">
+    
+  </head>
+  <body>
+     <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  
+  <div class="navbar">
+    <div class="logo">
+    <img src='static/logo.png'>
+    </div>
+     <a href="{{url_for('home_page')}}">Home</a>
+    <a href="{{ url_for('services_page') }}">Services</a>
+    <a href="{{ url_for('faq_page') }}">FAQ</a>
+    <a href="{{ url_for('contact_page') }}">Contact</a>
+    <a href="{{ url_for('about_page') }}">About us</a>
+    <a href="{{ url_for('login_page') }}" class="sign">Sign in</a>
+  </div>
+    <h2 id="head"> our services</h2>
+    <table>
+      <tr>
+        <td>
+          <div class ="card">
+          <img src="static/com.png">
+          <h4>communications</h4>
+          <button id="knw-mr"> know more</button>
+          
+        </div>
+        </td>
+         <td><div class ="card">
+            <img src="static/br.png" id="br">
+            <h4>fast development</h4>
+            <button id="knw-mr"> know more</button>
+          
+        </div></td>
+         <td><div class ="card">
+            <img src="static/bug.png">
+          <h4>Debugging</h4>
+        <button id="knw-mr"> know more</button>
+        </div></td>
+      </tr>
+    </table>
+    
+  </body>
+</html>

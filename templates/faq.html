@@ -1,0 +1,41 @@
+<html>
+  <head>
+     <title>Program Explanation</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  <link rel ="stylesheet" href="static/css/faq.css">
+    
+  </head>
+  <body>
+     <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  
+  <div class="navbar">
+    <div class="logo">
+    <img src='static/logo.png'>
+    </div>
+     <a href="{{url_for('home_page')}}">Home</a>
+    <a href="{{ url_for('services_page') }}">Services</a>
+    <a href="{{ url_for('faq_page') }}">FAQ</a>
+    <a href="{{ url_for('contact_page') }}">Contact</a>
+    <a href="{{ url_for('about_page') }}">About us</a>
+    <a href="{{ url_for('login_page') }}" class="sign">Sign in</a>
+  </div>
+    <h2 id="head"> FAQ</h2>
+    <div class="questions"> <p>What can I ask the chatbot?</p>
+      <button id="drop"><img src="static/drop.png"></button>
+    </div>
+     <div >
+     <p> you can do  chating like any chat application. it can check your grammar skills, code explaination and code debugging</p>
+      </div>
+    <div class="questions"> <p>What can I ask the chatbot?</p>
+      <button id="drop"><img src="static/drop.png"></button>
+    </div>
+    <div class="questions"> <p>What can I ask the chatbot?</p>
+      <button id="drop"><img src="static/drop.png"></button>
+      
+    </div>
+    
+  </body>
+</html>

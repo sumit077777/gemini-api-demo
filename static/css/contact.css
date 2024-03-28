@@ -1,0 +1,93 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+html{
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  background-image: url("static/bg.jpg");
+  background-repeat: no-repeat;
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  border-radius:5px;
+  display:flex;
+  justify-content:right;
+  align-items:center;
+}
+.navbar a
+{
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+  margin-right:40px;
+}
+.logo img
+{
+  width:80px;
+  height:50px;
+  float:left;
+  margin-right:780px;
+}
+      h2{
+          text-align: center;
+         font-family: 'Nova Slim', cursive;
+          margin-top:20px;
+          
+        }
+    
+     #home{
+          margin-left:800px
+        }
+       
+      .message-box{
+        padding:20px;
+        height: 480px;
+        width: 500px;
+        box-shadow: 0 0 10px silver;
+        position: relative;
+        margin-left: 500px;
+        margin-top: 20px;
+        background: rgba(225, 243, 238, 0.1);
+        border-radius:10px;
+       
+    }
+    .form{
+        margin: left 200px;   
+    }
+    label{
+        margin-left: 40px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    input{
+        margin-left: 40px;
+        margin-top: 10px;
+        height: 30px;
+    }
+    .detail{
+        margin-top: 0px;
+        margin-left: 40px;
+      
+    }
+#add{
+  margin-left:40px;
+}
+    button{
+        color: #d8eee7;
+        height: 30px;
+        padding:2px;
+        width: 100px;
+        margin-left: 40px;
+        font-size: 20px;
+        background-color: blue;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px silver;
+        border-color:aliceblue
+    }

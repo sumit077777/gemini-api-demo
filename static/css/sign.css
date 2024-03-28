@@ -1,0 +1,99 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+html{
+  font-family: 'Nunito', sans-serif;
+}
+
+.welcome img{
+  width:900px;
+  height:600px;
+  margin-right:none;
+  border-radius:5px 0 0 5px;
+  position: relative;
+  display: inline-block;
+  align-content:center;
+  justify-content:center;
+  
+}
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Optional: Add a semi-transparent background */
+  color:#804f87;* Optional: Set the text color */
+  padding: 20px;
+  text-align:center;
+  
+}
+
+.image-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-right:450px;
+  font-color:#804f87;
+  
+}
+
+.image-overlay p {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-right:450px;
+  font-color:#804f87;
+}
+.outer-box{
+  padding:60px;
+  display:flex;
+  background:  rgb(84, 52, 131);
+  height:100%
+}
+.card{
+  width:500px;
+  height:600px;
+  background-color:  rgba(193, 245, 227, 0.2);
+  border-radius:0 5px 5px 0;
+  display:flex;
+  align-content:center;
+  justify-content:center;
+   backdrop-filter: blur(100px) brightness(120%);
+  
+}
+#signin-container, #signup-container {
+  margin: 50px auto;
+  width: 300px;
+  height:420px;
+  padding: 20px;
+  background-color:rgba(193, 245, 227, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  backdrop-filter: blur(100px) brightness(200%);
+  margin-top:90px;
+}
+
+#signup-container {
+  display: none;
+}
+
+input[type="text"], input[type="password"], input[type="email"],button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius:5px;
+  border:none;
+  
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}

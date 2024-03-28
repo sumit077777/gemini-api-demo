@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Debugger</title>
+    <link rel ="stylesheet" href="static/css/debug.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/debug.css') }}">
+    
+</head>
+<body>
+   <div class="navbar">
+    <div class="logo">
+    <img src='static/logo.png'>
+    </div>
+    <a href="{{url_for('home_page')}}">Home</a>
+    <a href="{{ url_for('services_page') }}">Services</a>
+    <a href="{{ url_for('faq_page') }}">FAQ</a>
+    <a href="{{ url_for('contact_page') }}">Contact</a>
+    <a href="{{ url_for('about_page') }}">About us</a>
+    <a href="{{ url_for('login_page') }}" class="sign">Sign in</a>
+  </div>
+    <h1>Program Debugger</h1>
+
+    <textarea id="programInput" rows="4" cols="100"></textarea>
+    <br>
+    <button id="submit-button">Debug</button>
+    <button id="new">New</button>
+     <div id="remaining-content"></div>
+
+    <div id="chat-output">
+      <img src="static/copy-icon.png" class="copy-icon">
+       <button id="copy-button">Copy</button>
+    <hr>
+    </div>
+   
+  
+
+    <script src="static/debug.js" type="text/javascript">
+      
+
+    </script>
+</body>
+</html>

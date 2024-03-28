@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+
+<body style="background-image: url('static/bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <div class="navbar">
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}">
+    </div>
+    <a href="{{url_for('home_page')}}">Home</a>
+    <a href="{{ url_for('services_page') }}">Services</a>
+    <a href="{{ url_for('faq_page') }}">FAQ</a>
+    <a href="{{ url_for('contact_page') }}">Contact</a>
+    <a href="{{ url_for('about_page') }}">About us</a>
+    <a href="{{ url_for('login_page') }}" class="sign">Sign in</a>
+</div>
+  <div class="intro">
+    <div class="intro-text">
+    <p>Welcome to our Intelligent our Ai  Assistant! Our cutting-edge technologu combines the power of ChatGPT and advanced language processing to provide you with a unique and seamless coding experience. Chat with our AI-powered bot for  comprehensive code explanations, and efficient code debugging. Take your coding skills to the next level with our all-in-one platform. Explore, learn, and code smarter with our Intelligent Coding Assistant.
+
+
+
+
+</p>
+    </div>
+  <img src="static/bot.png">
+  </div>
+  <table>
+    <tr>
+      <td>
+        <div class="box">
+          <a href="{{url_for('grammar_page')}}"><img src="static/english.jpg"></a>
+          <h3> chat with AI assistant</h3>
+          
+        </div>
+      </td>
+      <td>
+        <div class="box">
+          <a href="{{url_for('code_page')}}"><img src="static/codexplainer.svg"></a>
+          <h3>Introducing our Code Explainer Bot:</h3>
+          
+          <p>Simplify complex code. Get clear explanations, step-by-step breakdowns, and deepen your understanding. Elevate your coding skills with our concise Code Explainer Bot.</p>
+        </div>
+      </td>
+      <td>
+        <div class="box">
+          <a href="{{url_for('debug_page')}}"><img src="static/debug.svg"></a>
+          <h3> Introducing our Code Debugger Bot </h3>
+          <p>Our bot provides real-time error detection and actionable insights, making debugging a breeze. Elevate your coding game with our concise Code Debugger Bot.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+</body>
+  <footer>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+     
+      <p>&copy; 2021 Your Website. All rights reserved.</p>
+    </footer>
+  </div>
+
+</html>
